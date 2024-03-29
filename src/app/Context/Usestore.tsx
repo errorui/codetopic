@@ -65,7 +65,7 @@ console.log("Index of", target, ":", index); // Output: Index of 7 : 3
   const [language, setlanguage] = useState<string>("javascript");
   const [author, setauthor] = useState<string>("Raj Raman");
   const [style, setstyle] = useState<{ [key: string]: React.CSSProperties }>(
-    hljs.darcula
+    hljs.dracula
   );
   const [showline, setshowline] = useState<boolean>(true);
   const [fontsize, setfontsize] = useState<number>(8);
