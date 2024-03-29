@@ -1,15 +1,18 @@
 import * as prismStyles from "react-syntax-highlighter/dist/esm/styles/prism";
 import * as hljs from "react-syntax-highlighter/dist/esm/styles/hljs";
-import style from "react-syntax-highlighter/dist/esm/styles/hljs/a11y-dark";
+import { dark, tomorrow } from 'react-syntax-highlighter/dist/esm/styles/prism';
+import prism from 'react-syntax-highlighter/dist/esm/styles/prism/prism';
+
+
 const themes = [
   { name: "coy", style: prismStyles.coy },
-  { name: "dark", style: prismStyles.dark },
+  // { name: "dark", style: prismStyles.dark },
   { name: "funky", style: prismStyles.funky },
   { name: "okaidia", style: prismStyles.okaidia },
   { name: "solarizedlight", style: prismStyles.solarizedlight },
-  { name: "tomorrow", style: prismStyles.tomorrow },
+  { name: "tomorrow", style: tomorrow },
   { name: "twilight", style: prismStyles.twilight },
-  { name: "prism", style: prismStyles.prism },
+  { name: "prism", style: prism },
   { name: "a11yDark", style: prismStyles.a11yDark },
   { name: "atomDark", style: prismStyles.atomDark },
   {
@@ -20,8 +23,9 @@ const themes = [
   { name: "coldarkCold", style: prismStyles.coldarkCold },
   { name: "coldarkDark", style: prismStyles.coldarkDark },
 
-  { name: "darcula", style: prismStyles.darcula },
-  { name: "dracula", style: prismStyles.dracula },
+  { name: "darcula", style: hljs.darcula },
+  { name: "dracula", style: hljs.dracula },
+  { name: "ascetic", style: hljs.ascetic },
   { name: "duotoneDark", style: prismStyles.duotoneDark },
   { name: "duotoneEarth", style: prismStyles.duotoneEarth },
   { name: "duotoneForest", style: prismStyles.duotoneForest },
@@ -48,8 +52,8 @@ const themes = [
   { name: "vs", style: prismStyles.vs },
   { name: "vscDarkPlus", style: prismStyles.vscDarkPlus },
   { name: "xonokai", style: prismStyles.xonokai },
-  { name: "dark", style: hljs.dark },
-  { name: "darcula", style: hljs.darcula },
+  { name: "dark", style: dark },
+  // { name: "darcula", style: hljs.darcula },
 ];
 const languages = [
   "javascript",
