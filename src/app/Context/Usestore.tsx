@@ -91,7 +91,7 @@ console.log("Index of", target, ":", index); // Output: Index of 7 : 3
 
     const link = document.createElement("a");
     link.href = data;
-    link.download = "downloaded-image.jpg";
+    link.download = `${filename}.jpg`;
 
     document.body.appendChild(link);
     link.click();
